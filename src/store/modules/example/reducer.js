@@ -8,7 +8,9 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case types.BOTAO_CLICADO_SUCCESS: {
       console.log('Sucesso');
-      return state;
+      const newState = { ...state };
+      newState.botaoClicado = !newState.botaoClicado;
+      return newState;
     }
     case types.BOTAO_CLICADO_FAILURE: {
       console.log('Deu erro :(');
