@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'https://apirest.awesomerafa.fun',
+  baseURL: 'ADICIONAR_URL_API_AQUI!!',
 });
